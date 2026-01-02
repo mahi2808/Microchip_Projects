@@ -7,4 +7,4 @@ and XC32 compiler.
 ## Examples
 - Basic PWM generation
 - PWM at 20 kHz with 50% duty cycle
-- Variable duty cycle PWM using SysTick timer
+- Variable frequency PWM using SysTick timer
