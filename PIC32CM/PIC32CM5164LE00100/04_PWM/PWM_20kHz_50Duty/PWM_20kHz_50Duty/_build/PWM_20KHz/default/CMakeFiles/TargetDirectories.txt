@@ -1,0 +1,5 @@
+C:/Users/Administrator/MPLABXProjects/PWM_20KHz/_build/PWM_20KHz/default/CMakeFiles/PWM_20KHz_default_default_XC32_compile.dir
+C:/Users/Administrator/MPLABXProjects/PWM_20KHz/_build/PWM_20KHz/default/CMakeFiles/PWM_20KHz_default_image_KDm6pjEH.dir
+C:/Users/Administrator/MPLABXProjects/PWM_20KHz/_build/PWM_20KHz/default/CMakeFiles/PWM_20KHz_default_Bin2Hex.dir
+C:/Users/Administrator/MPLABXProjects/PWM_20KHz/_build/PWM_20KHz/default/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/MPLABXProjects/PWM_20KHz/_build/PWM_20KHz/default/CMakeFiles/rebuild_cache.dir
