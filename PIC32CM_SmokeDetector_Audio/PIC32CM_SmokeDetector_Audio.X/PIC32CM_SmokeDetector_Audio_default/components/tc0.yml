@@ -1,0 +1,82 @@
+configVersion: 1.0.0
+componentName: tc0
+coreVersion: 5.8.3
+device: PIC32CM5164LE00100
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: tc0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.1-dev
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.24.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: tc0
+          x: '136'
+          y: '153'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    TC_TIMER_PERIOD:
+      attributes:
+        id: TC_TIMER_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '65535'
+          type: Long
+        type: Attributes
+      - children:
+        - attributes:
+            id: tc0
+            value: '2399'
+          type: Dynamic
+        type: Values
+      type: Long
+    TC_TIMER_TIME_MS:
+      attributes:
+        id: TC_TIMER_TIME_MS
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '1365.3334'
+          type: Float
+        type: Attributes
+      - children:
+        - attributes:
+            value: '50.0'
+          type: User
+        type: Values
+      type: Float
+    TC_TIMER_UNIT:
+      attributes:
+        id: TC_TIMER_UNIT
+      children:
+      - children:
+        - attributes:
+            value: microsecond
+          type: User
+        type: Values
+      type: Combo
+  userData: {}
