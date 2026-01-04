@@ -13,8 +13,8 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 14,PB07,,Available,,,,,,NORMAL
 15,PB08,,Available,,,,,,NORMAL
 16,PB09,,Available,,,,,,NORMAL
-17,PA04,,Available,,,,,,NORMAL
-18,PA05,,Available,,,,,,NORMAL
+17,PA04,,OPAMP_OAOUT2,Analog,High Impedance,n/a,,,NORMAL
+18,PA05,,OPAMP_OAPOS2,Analog,High Impedance,n/a,,,NORMAL
 19,PA06,,Available,,,,,,NORMAL
 20,PA07,,Available,,,,,,NORMAL
 21,PC05,,Available,,,,,,NORMAL

@@ -31,6 +31,12 @@ volatile uint32_t audio_index = 0;
 
 void TC0_Callback(uintptr_t context);
 
+extern const unsigned char attention_clear_area_female_455102_raw[];
+extern const unsigned int attention_clear_area_female_455102_raw_len;
+
+extern const unsigned char Hrudayat_Vaje_Something_80kb_raw[];
+extern const unsigned int Hrudayat_Vaje_Something_80kb_raw_len;
+
 /* 5 kHz test tone
  * Sample rate: 20 kHz
  * 4 samples per cycle
@@ -73,20 +79,22 @@ void TC0_Callback(uintptr_t context)
 {
     uint16_t dac_value;
 
-    /* Convert 8-bit audio sample to 12-bit DAC */
-    dac_value = ((uint16_t)audio_5khz[audio_index]) << 4;
+    dac_value =
+//        ((uint16_t)attention_clear_area_female_455102_raw[audio_index]) << 4;
+    ((uint16_t)Hrudayat_Vaje_Something_80kb_raw[audio_index]) << 4;
 
-    /* Write to DAC */
     DAC_DataWrite(DAC_CHANNEL_0, dac_value);
 
-    /* Move to next sample */
     audio_index++;
 
-    if (audio_index >= AUDIO_LEN)
+//    if (audio_index >= attention_clear_area_female_455102_raw_len)
+    if (audio_index >= Hrudayat_Vaje_Something_80kb_raw_len)
+        
     {
-        audio_index = 0;   // repeat sound
+        audio_index = 0;   // loop audio
     }
 }
+
 
 /*******************************************************************************
  End of File

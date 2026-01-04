@@ -4,11 +4,11 @@ build/default/debug/_ext/1171490990/initialization.o: \
  ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.h \
  ../src/config/default/device.h \
  ../src/packs/PIC32CM5164LE00100_DFP/pic32cm5164le00100.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/core_cm23.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_version.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_compiler.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_gcc.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/m-profile/armv8m_mpu.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/core_cm23.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h \
  ../src/packs/PIC32CM5164LE00100_DFP/component/ac.h \
  ../src/packs/PIC32CM5164LE00100_DFP/component/adc.h \
  ../src/packs/PIC32CM5164LE00100_DFP/component/ccl.h \
@@ -84,12 +84,12 @@ build/default/debug/_ext/1171490990/initialization.o: \
  ../src/packs/PIC32CM5164LE00100_DFP/pio/pic32cm5164le00100.h \
  ../src/config/default/device_cache.h ../src/config/default/device.h \
  ../src/config/default/toolchain_specifics.h \
- C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_compiler.h \
+ ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
  ../src/config/default/peripheral/evsys/plib_evsys.h \
- ../src/config/default/peripheral/pm/plib_pm.h \
  ../src/config/default/peripheral/port/plib_port.h \
  ../src/config/default/peripheral/clock/plib_clock.h \
  ../src/config/default/peripheral/nvic/plib_nvic.h \
+ ../src/config/default/peripheral/pm/plib_pm.h \
  ../src/config/default/peripheral/tc/plib_tc0.h \
  ../src/config/default/peripheral/tc/plib_tc_common.h \
  ../src/config/default/peripheral/dac/plib_dac.h
@@ -97,11 +97,11 @@ build/default/debug/_ext/1171490990/initialization.o: \
 ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.h:
 ../src/config/default/device.h:
 ../src/packs/PIC32CM5164LE00100_DFP/pic32cm5164le00100.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/core_cm23.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_version.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_compiler.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_gcc.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/m-profile/armv8m_mpu.h:
+../src/packs/CMSIS/CMSIS/Core/Include/core_cm23.h:
+../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h:
+../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
+../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h:
+../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h:
 ../src/packs/PIC32CM5164LE00100_DFP/component/ac.h:
 ../src/packs/PIC32CM5164LE00100_DFP/component/adc.h:
 ../src/packs/PIC32CM5164LE00100_DFP/component/ccl.h:
@@ -178,12 +178,12 @@ C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/m-profile/
 ../src/config/default/device_cache.h:
 ../src/config/default/device.h:
 ../src/config/default/toolchain_specifics.h:
-C:/Users/Administrator/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/cmsis_compiler.h:
+../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
 ../src/config/default/peripheral/evsys/plib_evsys.h:
-../src/config/default/peripheral/pm/plib_pm.h:
 ../src/config/default/peripheral/port/plib_port.h:
 ../src/config/default/peripheral/clock/plib_clock.h:
 ../src/config/default/peripheral/nvic/plib_nvic.h:
+../src/config/default/peripheral/pm/plib_pm.h:
 ../src/config/default/peripheral/tc/plib_tc0.h:
 ../src/config/default/peripheral/tc/plib_tc_common.h:
 ../src/config/default/peripheral/dac/plib_dac.h:

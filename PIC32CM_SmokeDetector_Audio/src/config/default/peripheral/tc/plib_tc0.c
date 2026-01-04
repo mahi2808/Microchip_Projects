@@ -62,7 +62,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-volatile static TC_TIMER_CALLBACK_OBJ TC0_CallbackObject;
+static volatile TC_TIMER_CALLBACK_OBJ TC0_CallbackObject;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -89,7 +89,7 @@ void TC0_TimerInitialize( void )
     TC0_REGS->COUNT16.TC_WAVE = (uint8_t)TC_WAVE_WAVEGEN_MPWM;
 
     /* Configure timer period */
-    TC0_REGS->COUNT16.TC_CC[0U] = 2399U;
+    TC0_REGS->COUNT16.TC_CC[0U] = 5999U;
 
     /* Clear all interrupt flags */
     TC0_REGS->COUNT16.TC_INTFLAG = (uint8_t)TC_INTFLAG_Msk;

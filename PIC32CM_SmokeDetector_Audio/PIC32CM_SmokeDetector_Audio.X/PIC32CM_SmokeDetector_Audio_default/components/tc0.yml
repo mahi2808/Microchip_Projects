@@ -9,10 +9,6 @@ dependency:
   type: module
   version: ''
 - dependencyPackage: ''
-  name: CMSIS_5
-  type: package
-  version: 5.9.1-dev
-- dependencyPackage: ''
   name: csp
   type: package
   version: v3.24.0
@@ -47,7 +43,7 @@ data:
       - children:
         - attributes:
             id: tc0
-            value: '2399'
+            value: '5999'
           type: Dynamic
         type: Values
       type: Long
@@ -65,7 +61,7 @@ data:
         type: Attributes
       - children:
         - attributes:
-            value: '50.0'
+            value: '125.0'
           type: User
         type: Values
       type: Float
