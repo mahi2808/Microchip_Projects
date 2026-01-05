@@ -78,7 +78,7 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
 }
 
 /* MISRAC 2012 deviation block start */
-/* MISRA C-2012 Rule 8.6 deviated 71 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
+/* MISRA C-2012 Rule 8.6 deviated 70 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
 extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -94,7 +94,6 @@ extern void EIC_EXTINT_4_Handler       ( void ) __attribute__((weak, alias("Dumm
 extern void EIC_EXTINT_5_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void EIC_EXTINT_6_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void EIC_EXTINT_7_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void EIC_OTHER_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void FREQM_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void NVMCTRL_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void DMAC_0_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -182,7 +181,7 @@ const H3DeviceVectors exception_table=
     .pfnEIC_EXTINT_5_Handler       = EIC_EXTINT_5_Handler,
     .pfnEIC_EXTINT_6_Handler       = EIC_EXTINT_6_Handler,
     .pfnEIC_EXTINT_7_Handler       = EIC_EXTINT_7_Handler,
-    .pfnEIC_OTHER_Handler          = EIC_OTHER_Handler,
+    .pfnEIC_OTHER_Handler          = EIC_OTHER_InterruptHandler,
     .pfnFREQM_Handler              = FREQM_Handler,
     .pfnNVMCTRL_Handler            = NVMCTRL_Handler,
     .pfnDMAC_0_Handler             = DMAC_0_Handler,

@@ -27,7 +27,17 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
+volatile bool sw0_pressed = false;
+
 volatile uint32_t audio_index = 0;
+
+void SW0_Callback(uintptr_t context)
+{
+    sw0_pressed = !sw0_pressed;
+    audio_index = 0;
+}
+
+
 
 void TC0_Callback(uintptr_t context);
 
@@ -59,6 +69,9 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
     
+    EIC_CallbackRegister(EIC_PIN_12, SW0_Callback, 0);
+
+    
     TC0_TimerCallbackRegister(TC0_Callback, 0);
     
     TC0_TimerStart();
@@ -79,20 +92,30 @@ void TC0_Callback(uintptr_t context)
 {
     uint16_t dac_value;
 
+    if(sw0_pressed == false){
+        dac_value = ((uint16_t)attention_clear_area_female_455102_raw[audio_index]) << 4;
+            DAC_DataWrite(DAC_CHANNEL_0, dac_value);
+                audio_index++;
+    if (audio_index >= attention_clear_area_female_455102_raw_len)
+    {
+        audio_index = 0;   // loop audio
+    }
+    }
+    if(sw0_pressed == !false){
     dac_value =
 //        ((uint16_t)attention_clear_area_female_455102_raw[audio_index]) << 4;
     ((uint16_t)Hrudayat_Vaje_Something_80kb_raw[audio_index]) << 4;
-
     DAC_DataWrite(DAC_CHANNEL_0, dac_value);
-
     audio_index++;
-
-//    if (audio_index >= attention_clear_area_female_455102_raw_len)
     if (audio_index >= Hrudayat_Vaje_Something_80kb_raw_len)
         
     {
         audio_index = 0;   // loop audio
     }
+    }
+
+
+
 }
 
 
