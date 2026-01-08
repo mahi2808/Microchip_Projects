@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=PIC32CM_SmokeDetector_Audio.X
+PROJECTNAME=PIC32CM_SmokeDetector_2Audio.X
 
 # Active Configuration
 DEFAULTCONF=default

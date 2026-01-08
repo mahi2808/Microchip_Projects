@@ -28,6 +28,7 @@
 #include "definitions.h"                // SYS function prototypes
 
 volatile bool sw0_pressed = false;
+volatile bool Sample_Rate_8KHz = false;
 
 volatile uint32_t audio_index = 0;
 
@@ -80,17 +81,12 @@ int main ( void )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
-    
-    }
-
-    /* Execution should not come here during normal operation */
-
-    return ( EXIT_FAILURE );
-}
-
-void TC0_Callback(uintptr_t context)
-{
-    uint16_t dac_value;
+        
+        if(Sample_Rate_8KHz == true){
+            
+            Sample_Rate_8KHz = false;
+            
+                uint16_t dac_value;
 
     if(sw0_pressed == false){
         dac_value = ((uint16_t)attention_clear_area_female_455102_raw[audio_index]) << 4;
@@ -113,9 +109,18 @@ void TC0_Callback(uintptr_t context)
         audio_index = 0;   // loop audio
     }
     }
+        }
+    
+    }
 
+    /* Execution should not come here during normal operation */
 
+    return ( EXIT_FAILURE );
+}
 
+void TC0_Callback(uintptr_t context)
+{
+    Sample_Rate_8KHz = true;
 }
 
 

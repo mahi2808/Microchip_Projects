@@ -157,15 +157,15 @@
                      displayName="PIC32CM_SmokeDetector_Audio_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/dfp.yml</itemPath>
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/tc0.yml</itemPath>
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/core.yml</itemPath>
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/cmsis.yml</itemPath>
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/dac.yml</itemPath>
           <itemPath>PIC32CM_SmokeDetector_Audio_default/components/pm.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/dfp.yml</itemPath>
           <itemPath>PIC32CM_SmokeDetector_Audio_default/components/nvmctrl.yml</itemPath>
-          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/eic.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/core.yml</itemPath>
           <itemPath>PIC32CM_SmokeDetector_Audio_default/components/evsys.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/tc0.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/dac.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/eic.yml</itemPath>
+          <itemPath>PIC32CM_SmokeDetector_Audio_default/components/cmsis.yml</itemPath>
         </logicalFolder>
         <itemPath>PIC32CM_SmokeDetector_Audio_default/mcc-config.mc4</itemPath>
       </logicalFolder>
