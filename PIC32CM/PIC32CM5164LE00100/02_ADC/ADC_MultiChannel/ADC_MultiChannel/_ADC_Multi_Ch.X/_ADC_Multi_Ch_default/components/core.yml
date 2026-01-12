@@ -1,0 +1,311 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.8.3
+device: PIC32CM5164LE00100
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.24.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    ADC_CLOCK_ENABLE:
+      attributes:
+        id: ADC_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: adc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ADC_CLOCK_FREQUENCY:
+      attributes:
+        id: ADC_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '48000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_ID_28_CHEN:
+      attributes:
+        id: GCLK_ID_28_CHEN
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    GCLK_ID_28_FREQ:
+      attributes:
+        id: GCLK_ID_28_FREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '48000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    MCLK_APBC_INITIAL_VALUE:
+      attributes:
+        id: MCLK_APBC_INITIAL_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1fffff'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_18_FUNCTION_TYPE:
+      attributes:
+        id: PIN_18_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ADC_AIN3
+          type: User
+        type: Values
+      type: String
+    PIN_18_MODE:
+      attributes:
+        id: PIN_18_MODE
+      children:
+      - children:
+        - attributes:
+            value: ANALOG
+          type: User
+        type: Values
+      type: String
+    PIN_18_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_18_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: B
+          type: User
+        type: Values
+      type: String
+    PIN_20_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_20_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_8_FUNCTION_TYPE:
+      attributes:
+        id: PIN_8_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ADC_AIN1
+          type: User
+        type: Values
+      type: String
+    PIN_8_MODE:
+      attributes:
+        id: PIN_8_MODE
+      children:
+      - children:
+        - attributes:
+            value: ANALOG
+          type: User
+        type: Values
+      type: String
+    PIN_8_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_8_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: B
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_0_DIR:
+      attributes:
+        id: PORT_GROUP_0_DIR
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_OUT:
+      attributes:
+        id: PORT_GROUP_0_OUT
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_3:
+      attributes:
+        id: PORT_GROUP_0_PAD_3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA03
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_5:
+      attributes:
+        id: PORT_GROUP_0_PAD_5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA05
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PAD_7:
+      attributes:
+        id: PORT_GROUP_0_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PA07
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG3:
+      attributes:
+        id: PORT_GROUP_0_PINCFG3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG5:
+      attributes:
+        id: PORT_GROUP_0_PINCFG5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PINCFG7:
+      attributes:
+        id: PORT_GROUP_0_PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PIN_3_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_3_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_0_PIN_5_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_5_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_0_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_0_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_0_PMUX1:
+      attributes:
+        id: PORT_GROUP_0_PMUX1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x10'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX2:
+      attributes:
+        id: PORT_GROUP_0_PMUX2
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x10'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_0_PMUX3:
+      attributes:
+        id: PORT_GROUP_0_PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '0'
+        canvasWidth: '0'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData

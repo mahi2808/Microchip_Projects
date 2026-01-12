@@ -1,0 +1,6 @@
+{
+    "mplab.clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}\\_build\\PWM_20KHz\\default"
+    ],
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.00\\bin\\xc32-clangd.exe"
+}

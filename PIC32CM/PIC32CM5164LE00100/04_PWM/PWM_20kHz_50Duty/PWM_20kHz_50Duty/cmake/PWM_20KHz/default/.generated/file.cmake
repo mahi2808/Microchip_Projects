@@ -1,0 +1,48 @@
+# The following variables contains the files used by the different stages of the build process.
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_assemble)
+set_source_files_properties(${PWM_20KHz_default_default_XC32_FILE_TYPE_assemble} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${PWM_20KHz_default_default_XC32_FILE_TYPE_assemble})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_assembleWithPreprocess)
+set_source_files_properties(${PWM_20KHz_default_default_XC32_FILE_TYPE_assembleWithPreprocess} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${PWM_20KHz_default_default_XC32_FILE_TYPE_assembleWithPreprocess})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/exceptions.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/initialization.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/interrupts.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/libc_syscalls.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/clock/plib_clock.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/evsys/plib_evsys.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/nvic/plib_nvic.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/pm/plib_pm.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/port/plib_port.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/peripheral/tcc/plib_tcc0.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/startup_xc32.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/stdio/xc32_monitor.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/main.c")
+set_source_files_properties(${PWM_20KHz_default_default_XC32_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_compile_cpp)
+set_source_files_properties(${PWM_20KHz_default_default_XC32_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_link)
+set(PWM_20KHz_default_default_XC32_FILE_TYPE_bin2hex)
+
+# The linker script used for the build.
+set(PWM_20KHz_default_LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/config/default/PIC32CM5164LE00100.ld")
+set(PWM_20KHz_default_image_name "default.elf")
+set(PWM_20KHz_default_image_base_name "default")
+
+# The output directory of the final image.
+set(PWM_20KHz_default_output_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../out/PWM_20KHz")
+
+# The full path to the final image.
+set(PWM_20KHz_default_full_path_to_image ${PWM_20KHz_default_output_dir}/${PWM_20KHz_default_image_name})
