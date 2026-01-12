@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production/PIC32CM_SmokeDetector_2Alarms_and_1Voice.X.production.elf">
+    <memory name="program">
+      <units>bytes</units>
+      <length>524288</length>
+      <used>243984</used>
+      <free>280304</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>334</used>
+      <free>65202</free>
+    </memory>
+  </executable>
+</project>
