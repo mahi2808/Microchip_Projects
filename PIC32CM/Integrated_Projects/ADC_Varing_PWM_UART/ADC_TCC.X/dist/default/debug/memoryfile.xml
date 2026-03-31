@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug/ADC_TCC.X.debug.elf">
+    <memory name="program">
+      <units>bytes</units>
+      <length>524288</length>
+      <used>6063</used>
+      <free>518225</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>1439</used>
+      <free>64097</free>
+    </memory>
+  </executable>
+</project>
