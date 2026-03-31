@@ -1,6 +1,31 @@
 {
-    "version": "1.9",
+    "version": "1.8",
     "importedFrom": "PWM_20KHz.X",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC32CM5164LE00100",
+            "imageType": "application",
+            "imagePath": "./out/PWM_20KHz/default.elf",
+            "toolProperties": "default-tool",
+            "tool": "EdbgTool",
+            "packs": [
+                {
+                    "name": "PIC32CM-LE_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.3.280"
+                },
+                {
+                    "name": "CMSIS",
+                    "vendor": "ARM",
+                    "version": "5.4.0"
+                }
+            ],
+            "fileSet": "Project files",
+            "toolchain": "default-XC32"
+        }
+    ],
     "propertyGroups": [
         {
             "name": "default-XC32",
@@ -191,32 +216,6 @@
                 "src/config/default/*{.c,.csv,.h,.ld}"
             ],
             "encoding": "ISO-8859-1"
-        }
-    ],
-    "configurations": [
-        {
-            "name": "default",
-            "id": "conf1",
-            "device": "PIC32CM5164LE00100",
-            "imageType": "application",
-            "imagePath": "./out/PWM_20KHz/default.elf",
-            "toolProperties": "default-tool",
-            "tool": "EdbgTool",
-            "packs": [
-                {
-                    "name": "PIC32CM-LE_DFP",
-                    "vendor": "Microchip",
-                    "version": "1.3.280"
-                },
-                {
-                    "name": "CMSIS",
-                    "vendor": "ARM",
-                    "version": "5.4.0"
-                }
-            ],
-            "fileSet": "Project files",
-            "toolchain": "default-XC32",
-            "includeLegacyMacros": true
         }
     ]
 }
